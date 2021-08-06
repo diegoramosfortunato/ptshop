@@ -1,0 +1,146 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,200&display=swap');
+
+:root{
+    --cor0:#F7C945;
+    --cor1:#0D38CE;
+    --font-padrao:'Poppins', sans-serif;;
+}
+
+body,h1,h2,p,ul,a,li{
+    margin: 0px; /* para deixar a margem do site zerada */
+    padding: 0px;
+}
+
+body{
+     font-family: 'Poppins', sans-serif;
+
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+img{
+    display: block;
+    max-width: 100%; /* assim a imagem vai se adptar a diferentes tipos de tela*/
+}
+
+*{
+    box-sizing: border-box; /* isso faz com que o width definido seja respeitado*/
+}
+
+/*Menu*/
+
+.menu-bg{
+    background-color: var(--cor0);
+}
+.menu{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.menu-logo a{
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0 10px;
+
+}
+
+.menu-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-nav a {
+    margin: 13px;
+    display: block;
+    font-size: 1.25em;
+    transition-duration: 0.5s;
+}
+
+.menu-nav a:hover{
+   color: var(--cor1);
+   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.37);
+   border-radius: 8px;
+   padding: 8px;
+}
+
+/*sobre*/
+
+.sobre-container{
+    
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap; /* isso faz com que os elementos quebrem para a proxima linha quando a largura diminuir*/
+    
+}
+
+.sobre-info{
+    flex: 2 1 160px ;
+    margin: 0 10px;
+}
+
+.sobre-info h1{
+    font-size: 3em;
+    margin-bottom: .5em;
+}
+
+.sobre-info p {
+    font-size: 1.5em;
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
+.sobre-img{
+    flex: 1 1 400px;
+    margin: 0 10px;
+    
+   
+}
+
+/*nossos*/
+
+.nossos{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    
+}
+
+.item-nossos{
+    flex: 1 1 100px;
+    margin: 10px;
+   
+    
+
+}
+
+.item-nossos img{
+   
+    width: 70px;
+    height: 70px;
+}
+
+
+
+
+
+
+
