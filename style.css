@@ -39,6 +39,7 @@ img{
 
 .menu-bg{
     background-color: var(--cor0);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.219);
 }
 .menu{
     max-width: 960px;
@@ -55,6 +56,9 @@ img{
     font-size: 3em;
     font-weight: bold;
     margin: 0 10px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.39);
+    
+
 
 }
 
@@ -77,6 +81,8 @@ img{
    padding: 8px;
 }
 
+
+
 /*sobre*/
 
 .sobre-container{
@@ -97,6 +103,8 @@ img{
 .sobre-info h1{
     font-size: 3em;
     margin-bottom: .5em;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.39);
+
 }
 
 .sobre-info p {
@@ -108,6 +116,7 @@ img{
 .sobre-img{
     flex: 1 1 400px;
     margin: 0 10px;
+    
     
    
 }
@@ -122,25 +131,146 @@ img{
     flex-wrap: wrap;
     align-items: flex-end;
     
+    
+    
 }
 
 .item-nossos{
-    flex: 1 1 100px;
-    margin: 10px;
-   
+    flex: 1 1 175px;
+    margin: 40px;
+    border: 2px solid black;
+    padding: 0 10px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.26);
+    border-radius: 6px;
+    transition: 1s;
     
-
 }
 
 .item-nossos img{
-   
     width: 70px;
     height: 70px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.item-nossos h2{
+    font-size: 1.9em;
+    padding-top: 8px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.164);
+
+}
+
+.item-nossos p {
+    text-align: center;
+}
+
+.item-nossos:hover{
+    background-color: var(--cor0);
+    color: var(--cor1);
+    border-radius: 15px;
+
+}
+
+.titulo-sobre{
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.39);
+
 }
 
 
 
+.contato-titulo{
+  text-align: center;
+  font-size: 2em;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.39);
+}
+
+/*contato*/
+
+.contato{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+    
+   
+}
+
+.item-contato{
+    flex: 1 1 175px;
+    border: 2px solid black;
+    margin: 40px;
+    padding: 10px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.26);
+    border-radius: 6px;
+    transition: 1s;
+    
+    
+}
 
 
+.item-contato img{  
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.item-contato h2{
+    text-align: center;
+    margin-top: 15px;
+
+}
+
+
+.item-contato p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.insta:hover{
+  background-image: linear-gradient(45deg,#9D37A5,#ED86A3,#FD9C3D);
+  color: white;
+  border-radius: 15px;
+ 
+}
+
+.link:hover{
+    background-image: linear-gradient(45deg,#0173B2,#0274B3,#0173B2);
+    color: white;
+    border-radius: 15px;
+    
+  
+   
+}
+
+.whats:hover{
+    background-image: linear-gradient(45deg,#25D266,#18CF5B,#26D367);
+    color: white;
+    border-radius: 15px;
+    
+}
+
+.footer-bg{
+    background-color: var(--cor0);
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--cor1);
+    
+}
+
+.footer{
+   font: italic;
+   margin: auto;
+}
+
+@media (max-width: 667px;){
+    body{
+        font-size: 0.5em;
+    }
+}
 
 
